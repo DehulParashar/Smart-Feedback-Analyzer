@@ -1,0 +1,2 @@
+# Smart-Feedback-Analyzer
+Smart Feedback Analyzer is the web based feedback collecting system from the students and provides the automatic generation of a feedback. This system provides feedback in an easy and quick manner to the college faculty along with reports generated graphically via the Student-Teacher interface. By using this technology we can give feedback in online system much faster as compared to the existing paper feedback system.
