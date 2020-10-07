@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link type="text/css" rel="stylesheet" href="index.css" >
+	<title>Review Form</title>
+</head>
+<body >
+	<div id="college_name">SWAMI KESHVANAND INSTITUTE OF TECHNOLOGY ,MANAGEMENT & GRAMOTHAN</div>
+	<br><br>
+	<div id="clg_info">Ramnagariya,Jaipur contact:1800-200-5111</div>
+
+
+
+<hr>
+
+<!--img src="images/logo.jpeg" alt="SKIT LOGO" style="width:40vw ;height: 50vh ; margin-left:10vw;float:left;background-color: inherit;"-->
+<img src="images/swamiji.png" alt="Swamiji LOGO" style="width:40vw ;height: 50vh ; display: block; margin: auto;">
+
+<div id="student_data">
+  <form action="cs 2nd year/check.php" method="POST">
+
+  <b style="text-align: center; font-size: 4vh;"><u>STUDENT FEEDBACK FORM</u></b><br><br><br><br>
+
+  <b style="text-align: center; font-size: 4vh;"><label for="college_id"> ENTER YOUR COLLEGE ID </label> </b>  
+  <b style="margin:10vw; font-size: 20px;"> 
+  <input type="number" id="college_id" name="college_id" required><br><br>
+  
+  <b style="text-align: center; font-size: 4vh;"><label for="college_id"> ENTER YOUR PASSWORD </label> </b>  
+  <b style="margin:10vw; font-size: 20px;"> 
+  <input type="text" id="student_pass" name="student_pass" required><br><br>
+
+  <b style="text-align: center; font-size: 4vh;"> <label for="section"> SELECT YOUR SECTION </label></b> 
+  <b style="margin-left: 10vw; font-size: 20px;">               
+  <select id="section" name="section" required >< option disabled selected ></option><option> CS A</option><option> CS B</option><option>CS C</option><option>CS || SHIFT </option></select>
+ </b>
+ <br><br><br><br>
+ <hr><hr>
+ 
+   <b style="font-size: 3vh;"> 
+   	<ul style="text-align: left;">
+      <li>
+   	This feedback form is being given to you for getting your valueable feedback which will help our college in maintaining the standard of knowledge and discipline. Thus, you are required to fill the form with complete honesty.</li><br>
+
+    <li> You are being requested for your college id only to prevent multiple reviews from a student. No student detail in any case will be shared with any of the faculties under review.</li><br>
+
+    <li>Equal importance is given to both positive and negative reviews.</li><br>
+
+    <li>Please use formal words to write your review.</li> <br>
+</ul>
+</b>
+<br>
+<br>
+
+         <input type="checkbox" id="agreement" onchange="change()"><label for="agreement" style="font-size: larger;"> I AGREE AND I WISH TO CONTINUE</label>
+
+	      
+
+	                        <br><br><br><button id="submitbtn"  type="submit" disabled>Start review</button>                            
+                              
+			</form>			
+</div>
+
+
+</body>
+</html>

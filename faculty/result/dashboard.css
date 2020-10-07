@@ -1,0 +1,86 @@
+fieldset
+{	border: 2px solid black;
+	border-radius: 15px;
+	
+	background-color: skyblue;
+
+}
+
+legend
+{
+	font-size: 20px;
+	color: blue;
+}
+
+#list
+{
+	margin-left: 500px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#college_name
+{	
+	width: 100%;
+	height: auto;
+	font-style: bold;
+	font-size: 3vw;
+	border-radius: 10px;
+	text-align:center;
+	
+	
+}
+
+#clg_info
+{
+	font-style:bold;
+	font-size: 2vw;
+	font-family: 'Times New Roman';
+	text-align:center;
+
+}
+ul
+{
+
+}
+
+#bar
+{
+	border-radius: 5px;
+	position: sticky;
+	height:100vh;
+	width:  25vw;
+	float:left;
+	display:inline;
+}
+
+body
+{	background:  linear-gradient(#d8abcb,#b1cdd8);
+	/*background: linear-gradient(to bottom,#42b6d4,#5050ba);*/
+}
+
+#search_bar
+{	
+
+	text-align: center;
+	display: block;
+	margin: auto;
+	font-size: 20px;
+	font-style: bold;
+	margin-bottom: 20vh;
+
+
+}
+
+select
+{
+	width:30vw;
+	height: 30px;
+}
+
+button
+{
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+}

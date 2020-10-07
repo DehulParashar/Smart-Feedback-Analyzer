@@ -1,0 +1,154 @@
+/*body
+{	
+	background: linear-gradient(to bottom right,#42b6d4,#5050ba);
+}*/
+
+
+#fac_des
+{	
+	
+	background-color:inherit;
+	height: 400px;
+	font-size: 25px;
+	font-style: bold;
+	font-family: 'Times New Roman';
+
+}
+
+table
+{
+	float: left;
+	height:100%;
+	width: auto;
+	border-collapse:collapse;
+	text-align:left;
+}
+td
+{
+	width : auto;
+	
+	
+}
+
+tr
+{
+height : auto;
+}
+
+
+#fac_img
+{	
+	width: 30%;
+	float: left;
+	background-image: url("../images/flower.png");
+	height: 100%;
+}
+
+#fac_img img
+{
+	width : 100%;
+	height : 100%;
+	background-repeat : no-repeat;
+}
+
+
+#final_result
+{	background-image: url("result.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+
+
+#result1
+{	
+	background-image: url("CS A.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+
+#result2
+{	
+	background-image: url("CS B.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+#result3
+{	
+	background-image: url("CS C.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+#result4
+{	
+	background-image: url("CS 2nd SHIFT.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+
+
+#facility
+{	
+	background-image: url("facility.png");
+	background-color: cover;
+	background-size: cover;
+	display: block;
+	margin: auto;
+	width:1000px;
+	height:700px;
+}
+
+#des
+{
+	float:left;
+	height: 100%;
+	font-style: bold;
+	font-size:40px;
+	color:red;
+	text-decoration: underline; 
+
+}
+
+
+#search_bar
+{	color:purple;
+	text-overflow: ellipsis;
+	font-style: bold;
+	height:100%;
+	text-align: center;
+	float:right;
+	font-size: 20px;
+	
+	margin: none;
+
+}
+
+
+#header
+{
+	height: 5vh;
+}
+
+#all_results
+{
+	//display: none;
+}

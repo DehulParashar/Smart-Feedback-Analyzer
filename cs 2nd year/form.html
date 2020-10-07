@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="form.js"></script>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<title>Review form</title>
+</head>
+<body onload="init()"><div id="clg_info"><b><u style="font-size: 6vh;">SWAMI KESHVANAND INSTITUTE OF TECHNOLOGY, MANAGEMENT & GRAMOTHAN, JAIPUR</u> <br/>
+
+<br><u style="font-size: 4vh;">DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING<br/>
+
+<br>STUDENT FEEDBACK FORM</u></b>
+</div>
+<br>
+<hr style="height: 5px;color: black;margin-top: 2px;"><hr style="height: 5px;color: black;margin-top: 2px;"><hr style="height: 5px;color: black;margin-top: 2px;">
+
+		<b style="font-size: 20px;text-align:left;color:orange;"> You are requested to fill up the form on your own. Your feedback is important to us. It is <em><u>strictly confidential.</u></em><br><br>
+   		1.Please fill up wherever a response is necessary in the form.<br><br>
+   		2.Please tick mark wherever a choice is to be made from given responses.<br><br><br>
+   	</b>
+	<form name="form1" action="target1.php" method="POST">
+	
+	<b style="font-size:40px; font-family: cursive;color: yellow;"><u>Academics</u></b><br><br><br>
+	<input type="hidden" id="section" name="section">
+	<input type="hidden" id="poc_faculty" name="poc_faculty">
+	<input type="hidden" id="dms_faculty" name="dms_faculty">
+	<input type="hidden" id="mp_faculty" name="mp_faculty">
+	<input type="hidden" id="spt_faculty" name="spt_faculty">
+	<input type="hidden" id="ppl_faculty" name="ppl_faculty">
+	<input type="hidden" id="se_faculty" name="se_faculty">
+
+
+	<div id="display"></div>
+	<div id="container">
+			<div id="main1">
+				<b style="font-size: 30px;color:violet;"><u>Audibility of Lectures and Clarity of Presentations</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr>
+					</thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac1"></td>
+						<td><select name="PPL1" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac1"></td>
+					<td><select name="SE1" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac1" ></td>
+					<td><select name="DMS1" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac1" ></td>
+					<td><select name="MP1" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac1"  ></td>
+					<td><select name="SPT1" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac1"  ></td>
+					<td><select name="POC1" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td></tr>
+				</tr>
+				</table>	
+				
+				<button id="next" type="button" onclick="forward()">NEXT</button>		
+			</div>
+
+
+
+
+
+			<div id="main2">
+				<b style="font-size: 30px;color:violet;"><u style="text-align: center;">Methodologies and Chalk Board,OHP Work,PPT Work</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac2"></td>
+						<td><select name="PPL2" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac2"   ></td>
+					<td><select name="SE2" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac2"  ></td>
+					<td><select name="DMS2" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac2"   ></td>
+					<td><select name="MP2" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac2"  ></td>
+					<td><select name="SPT2" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac2"  ></td>
+					<td><select name="POC2" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td></tr>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>	
+
+
+
+
+			<div id="main3">
+				<b style="font-size: 30px;color:violet;"><u style="text-align: center;">Attitude Towards Teaching and Students</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac3" ></td>
+						<td><select name="PPL3" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac3"   ></td>
+					<td><select name="SE3" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac3"  ></td>
+					<td><select name="DMS3" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac3"   ></td>
+					<td><select name="MP3" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac3"  ></td>
+					<td><select name="SPT3" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac3"  ></td>
+					<td><select name="POC3" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td></tr>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>
+			<div id="main4">
+				<b style="font-size: 30px;color:violet;"><u style="text-align: center;">Overall Quality of Teaching</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac4"  ></td>
+						<td><select name="PPL4" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac4"   ></td>
+					<td><select name="SE4" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac4"  ></td>
+					<td><select name="DMS4" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac4"   ></td>
+					<td><select name="MP4" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac4"  ></td>
+					<td><select name="SPT4" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac4"  ></td>
+					<td><select name="POC4" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td></tr>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>
+
+			<div id="main5">
+				<b style="font-size: 30px;color:violet;"><u>Emphasis on Methodical and Systematic Working</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac5"  ></td>
+						<td><select name="PPL5" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac5"   ></td>
+					<td><select name="SE5" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac5"  ></td>
+					<td><select name="DMS5" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac5"   ></td>
+					<td><select name="MP5" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac5"  ></td>
+					<td><select name="SPT5" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac5"  ></td>
+					<td><select name="POC5" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+				
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>
+			
+
+			<div id="main6">
+					<b style="font-size: 30px;color:violet;"><u>Availability of Laboratory Instruction Sheet/Other Material</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac6"  ></td>
+						<td><select name="PPL6" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac6"   ></td>
+					<td><select name="SE6" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac6"  ></td>
+					<td><select name="DMS6" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac6"   ></td>
+					<td><select name="MP6" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac6"  ></td>
+					<td><select name="SPT6" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac6"  ></td>
+					<td><select name="POC6" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>
+
+
+			<div id="main7">
+					<b style="font-size: 30px;color:violet;"><u style="text-align: center;">Feedback on Report/Sessional Work by Teacher</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac7"  ></td>
+						<td><select name="PPL7" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac7"   ></td>
+					<td><select name="SE7" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac7"  ></td>
+					<td><select name="DMS7" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac7"   ></td>
+					<td><select name="MP7" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac7"  ></td>
+					<td><select name="SPT7" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac7"  ></td>
+					<td><select name="POC7" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			</div>
+
+
+			<div id="main8">
+					<b style="font-size: 30px;color:violet;"><u style="text-align: center;">Interaction With Faculty During Sesssion</u></b><br/><br/><hr><hr><br/>
+				<table>
+					<thead>
+					<tr>
+						<td>SUBJECTS</td>
+						<td>FACULTY</td>
+						<td>SCORE</td>
+					</tr></thead>
+
+					<tr>
+						<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+						<td id="ppl_fac8"  ></td>
+						<td><select name="PPL8" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+					
+				</tr>
+
+
+				<tr>
+					<td>SOFTWARE ENGINNERING</td>
+					<td id="se_fac8"   ></td>
+					<td><select name="SE8" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>DISCRETE MATHEMATICAL STRUCTURES</td>
+					<td id="dms_fac8"  ></td>
+					<td><select name="DMS8" required><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>MICROPROCESSOR AND INTERFACES</td>
+					<td id="mp_fac8"   ></td>
+					<td><select name="MP8" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+
+				</tr>
+				<tr>
+					<td>STATISTICS AND PROBABILITY THEORY</td>
+					<td id="spt_fac8"  ></td>
+					<td><select name="SPT8" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+
+				<tr>
+					<td>PRINCIPLES OF COMMUNICATION</td>
+					<td id="poc_fac8"  ></td>
+					<td><select name="POC8" required><option disabled selected ></option><option>1</option><option>2</option><option>3</option><option>4</option><option >5</option></select></td>
+				</tr>
+				</table>
+				<button id="prev" type="button" onclick="reverse();">PREVIOUS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button id="next" type="button" onclick="forward();">NEXT</button>	
+			
+			</div>
+
+	</div>
+
+
+
+<br><br><br><b style="font-size:40px; font-family: cursive;color:yellow;"><u> Overall Feedback</u></b><br><br><br>
+
+<div id="container">
+
+	<table>
+		<thead>
+			<tr>
+				<td>FACILITY</td>
+				<td>MARKS</td>
+				<td>FEEDBACK</td>
+			</tr>
+		</thead>
+		<tr>
+			<td>LIBRARY</td>
+			<td><select name="library_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="library_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+
+		<tr>
+			<td>HOSTLE</td>
+			<td><select name="hostle_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="hostle_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+
+		<tr>
+			<td>TRANSPORT FACILITY</td>
+			<td><select name="trans_fac_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="trans_fac_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+
+		<tr>
+			<td>MESS</td>
+			<td><select name="mess_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="mess_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+
+		<tr>
+			<td>CANTEEN</td>
+			<td><select name="canteen_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="canteen_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+
+		<tr>
+			<td>T&P CELL</td>
+			<td><select name="tpcell_marks"><option disabled selected></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+			<td><input name="tpcell_text" type="text" maxlength="50" placeholder="write here...." style="text-overflow: ellipsis;"></td>
+		</tr>
+	</table>
+</div>
+		
+<button type="submit" name="submit">submit</button>
+
+</form>
+</body>
+</html>

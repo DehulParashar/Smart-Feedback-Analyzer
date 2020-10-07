@@ -1,0 +1,72 @@
+body
+{	background: linear-gradient(#d8abcb,#b1cdd8);
+	margin:10px;
+}
+
+
+#college_name
+{	
+	width: 100%;
+	height: auto;
+	font-style: bold;
+	font-size: 3vw;
+	border-radius: 10px;
+	text-align:center;
+	
+	
+}
+
+#clg_info
+{
+	font-style:bold;
+	font-size: 2vw;
+	font-family: 'Times New Roman';
+	text-align:center;
+
+}
+
+select{
+	text-align: center;
+	width:13vw;
+	height:auto;
+}
+
+
+
+
+
+#student_data
+{	margin-top: 20vh;
+	border-radius: 20px;
+	font-style: bold;
+	
+	height: auto;
+	text-align: center;
+	
+	
+}
+
+
+#student_data:hover
+{
+
+}
+
+button
+{	margin-top:50px;
+	border-radius: 10px;
+	width: 100px;
+	display:block;
+	margin:auto;
+	margin-bottom : 50px;
+
+}
+
+label
+{
+	display: inline-block;
+	margin:auto;
+}
+
+
+
